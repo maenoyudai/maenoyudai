@@ -1,0 +1,607 @@
+@charset "utf-8";
+
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family:  "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body {
+    background: #E8D9BF;
+}
+
+/* ヘッダー */
+.header {
+    position: relative;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.51%;
+    padding-right: 6.53%;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.logo {
+    width: 226.7px;
+}
+
+.pc-nav ul {
+    display: flex;
+}
+
+.pc-nav ul li {
+    width: 105px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 53px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
+}
+
+.pc-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-activ button:before{
+    color: #fff;
+}
+
+.slick-dots li button:before{
+    color: #fff;
+}
+
+/* p {
+    text-align: center;
+} */
+
+.firsttext {
+    /* padding-top: 104px; */
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 116px;
+    text-align: center;
+    /* padding-top: 104px; */
+    width: 100%;
+    margin-top: 104px;
+}
+
+.secondtext{
+    /* padding-top: 52px; */
+    font-size: 82px;
+    font-weight: normal;
+    line-height: 96px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    /* padding-top: 47px; */
+    width: 100%;
+    /* margin-top: 47px; */
+}
+
+.thirdtext{
+    padding-top: 16px; 
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%;
+    /* margin-top: 16px; */
+}
+
+/* aboutus */
+/* .rate{ */
+    /* width: 500px; */
+    /* margin-left: 459px; */
+    /* margin-top: 102px; */
+    /* border-bottom-right-radius:15px; */
+/* } */
+
+.about_us{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rateimg{
+    display: flex;
+}
+
+.about_ustext1{
+    width: 267px;
+    /* margin-left: 80px; */
+    line-height: 22px;
+}
+
+.about_ustext2{
+    font-size: 44px;
+    margin-top: 56px;
+    line-height: 61px;
+}
+
+.about_ustext3{
+    font-size: 16px;
+    margin-top: 42.5px;
+    line-height: 26px;
+}
+
+.ratephot{
+    width: 50%;
+    margin-top: 104px;
+}
+
+.ratephot img{
+    border-bottom-right-radius: 82px;
+}
+
+.about_ustext{
+    margin-top: 158px;
+    /* margin-left: 80px; 
+    width: 50%; */
+    margin-left: 8%;
+    width: 42%;
+}
+
+/* menu */
+
+.menulogo{
+    width: 152px;
+    margin:  auto;
+    margin-top: 79px;
+}
+
+.allmenu{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.menulogo2{
+    font-size: 38px;
+   /* line-height: 22px; */
+    color: #D30202;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.menutext{
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.menuphoto img{
+    border-top-right-radius: 41px;
+    margin-top: 40px;
+}
+
+.menu1{
+    width: 30%;
+}
+
+
+
+/* gallery */
+
+.gallery{
+    display: flex;
+    margin-top: 17px;
+    width: 100%;
+}
+
+.gallerylogo{
+    margin: auto;
+    width: 247px;
+    margin-top: 37px;
+}
+
+.galleryphoto{
+    margin-top: 18px;
+}
+
+/* event */
+.eventrog{
+    width: 174px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.event{
+    text-align: center;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    /* height: 200px; */
+    border: solid;
+    border: #4F260B;
+    border: 4px solid;
+    padding-top: 37px;
+    padding-bottom: 46px;
+}
+
+.event1{
+    display: flex;
+    text-align: center;
+    margin-left: 148px;
+    font-size: 23px;
+    margin-right: 56px;
+    margin-top: 23px;
+}
+
+/* .event1{
+    margin-right: 56px;
+    margin-top: 23px;
+} */
+
+.event1 p:last-child{
+    display: inline-block;
+    border-bottom: 2px solid #4F260B;
+} 
+
+.event1 p:first-child{
+    margin-right: 52px;
+}
+
+/* .event2{
+    display: flex;
+    text-align: center;
+    margin-left: 148px;
+}
+.event3{
+    display: flex;
+    text-align: center;
+    margin-left: 148px;
+} */
+
+/* totop */
+.to_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 125px;
+}
+
+/* map */
+
+.acsesslogo{
+    width: 215px;
+    margin: auto;
+    margin-top: 68px;
+}
+
+iframe{
+    width:100%;
+    height: 470px;
+    margin-top: 38px;
+}
+
+/* footer */
+
+.footer{
+    background-color: #fff;
+    width: 100%;
+    /* height: 393px; */
+    padding-bottom: 75px;
+}
+
+.footertexit{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 74px;
+}
+
+.desinecafelogo{
+    text-align: left;
+    /* margin-left: 460px; */
+    /* padding-top: 74px; */
+    width: 228px;
+}
+
+.footerinfo{
+    font-size: 20px;
+    line-height: 39px;
+    display:block;
+    padding-left: 74px;
+}
+
+.under{
+    margin-top: 73px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* ハンバーガーメニューを消す */
+.humberger,
+.sp-nav {
+    display: none;
+}
+
+@media screen and (max-width:1100px){
+    .pc-nav {
+        display: none;
+    }
+
+    .humberger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        cursor: pointer;
+        height: 33px;
+        z-index: 999;
+    }
+
+    .humberger span{
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .humberger span::before,
+    .humberger span::after{
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        content: "";
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .humberger span::before{
+        bottom: 10px;
+    }
+
+    .humberger span::after{
+        top: 10px;
+    }
+
+    .open span{
+        background: transparent;
+    }
+
+    .open span::before{
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after{
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .sp-nav{
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sp-nav ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp-nav ul li{
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 0;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
+    }
+
+    .sp-nav ul li a{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .slider-sp{
+        display: none;
+    }
+
+
+    @media screen and (max-width: 767px){
+    
+    /* .slider {
+        display: none;
+    } */
+
+
+    .firsttext {
+        font-size: 17px;
+        margin-top: 41px;
+        width: 100%;
+    }
+
+    .secondtext{
+        font-size: 38px;
+        line-height: 44px;
+    }
+    
+    .thirdtext{
+        padding-top: 12px; 
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* about_us */
+
+    .rateimg{
+        display: block;
+    }
+
+    .about_ustext2{
+        font-size: 36px;
+    }
+
+    .about_ustext3{
+        line-height: 28px;
+    }
+
+    /* メニュー */
+    
+    .allmenu{
+        display: block;
+        /* margin: auto;
+        width: 100%; */
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menulogo{
+        width: 88px;
+    }
+
+    .menutext{
+        line-height: 27px;
+        margin-top: 17px;
+    }
+
+    /* ギャラリー */
+
+    .gallerylogo{
+        width: 142px;
+    }
+
+    /* イベント */
+
+    .eventrog{
+        width: 100px;
+    }
+    
+    .event1{
+        font-size: 16px;
+        display: block;
+        text-align: left;
+        /* はみ出した部分を表示しない */
+        overflow: hidden;
+        /* テキストを折り返さない */
+        white-space: nowrap;
+        margin-top: 23px;
+    }
+
+    .event1 p:first-child{
+        /* ...をつける */
+        text-overflow: ellipsis;
+    }
+
+
+    /* アクセス */
+
+    .acsesslogo{
+        width: 124px;
+    }
+
+
+    /* フッター */
+    .footertexit{
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .desinecafelogo{
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    /* totop */
+    .to_top{
+    width: 100px;
+    }
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
