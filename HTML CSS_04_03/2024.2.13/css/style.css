@@ -202,6 +202,11 @@ body {
     width: 42%;
 }
 
+.about_uslogo{
+    display: none;
+    visibility: hidden;
+}
+
 /* menu */
 
 .menulogo{
@@ -471,6 +476,15 @@ iframe{
         display: none;
     }
 
+    .secondtext{
+        font-size: 10.133vw;
+        letter-spacing: 0.02em;
+    }
+
+    /* アバウトアス */
+
+
+
 
     @media screen and (max-width: 767px){
     
@@ -486,14 +500,16 @@ iframe{
     }
 
     .secondtext{
-        font-size: 38px;
-        line-height: 44px;
+        font-size: 10.133vw;
+        /* line-height: 44px; */
+        letter-spacing: 0.02em;
     }
     
     .thirdtext{
         padding-top: 12px; 
         font-size: 16px;
         line-height: 30px;
+        /* font-size: 4.27vw; */
     }
 
     /* about_us */
@@ -510,6 +526,35 @@ iframe{
         line-height: 28px;
     }
 
+    .about_uslogo{
+        width: 160px;
+    }
+
+    .about_ustext2{
+        font-size: 9.6vw;
+    }
+
+    .about_ustext{
+        width: auto;
+    }
+
+    .about_ustext1{
+        visibility: hidden;
+    }
+
+    /* .rateph{
+        width: auto;
+    } */
+
+    .ratephot{
+        width: auto;
+    }
+
+    .menuphoto img{
+        /* border-radius: 0px; */
+        border-bottom-right-radius: 0px;
+    }
+
     /* メニュー */
     
     .allmenu{
@@ -520,6 +565,10 @@ iframe{
 
     .menu{
         display: block;
+    }
+
+    .menu1{
+        width: auto;
     }
 
     .menulogo{
@@ -548,14 +597,18 @@ iframe{
         display: block;
         text-align: left;
         /* はみ出した部分を表示しない */
-        overflow: hidden;
+        /* overflow: hidden; */
         /* テキストを折り返さない */
-        white-space: nowrap;
+        /* white-space: nowrap; */
         margin-top: 23px;
+        margin-left: 51px;
     }
 
-    .event1 p:first-child{
-        /* ...をつける */
+    .event1 p:last-child{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
     }
 
@@ -566,18 +619,25 @@ iframe{
         width: 124px;
     }
 
+    iframe{
+        height: 191px;
+    }
 
     /* フッター */
     .footertexit{
         display: block;
         text-align: left;
         font-size: 18px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     .desinecafelogo{
         text-align: left;
         margin-left: 20px;
+    }
+
+    .footerinfo{
+        padding-left: 20px;
     }
 
     /* totop */
