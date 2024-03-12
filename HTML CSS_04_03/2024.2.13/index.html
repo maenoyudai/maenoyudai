@@ -109,7 +109,7 @@
             <li class="menu1">
                 <p class="menuphoto">
                     <picture>
-                        <source serect="images/drink_sp@2x-100.jpg" media="(max-width767px)">
+                        <source srcset="images/drink_sp@2x-100.jpg" media="(max-width:767px)">
                         <img src="images/pc_menu_drink-100.jpg" alt="ドリンク写真">
                     </picture>
                 </p>
@@ -120,7 +120,7 @@
             <li class="menu1">
                 <p class="menuphoto">
                     <picture>
-                        <source serect="images/food_sp@2x-100.jpg" media="(max-width767px)">
+                        <source srcset="images/food_sp@2x-100.jpg" media="(max-width:767px)">
                         <img src="images/pc_menu_food-100.jpg" alt="フード写真">
                     </picture>
                 </p>
@@ -132,7 +132,7 @@
             <li class="menu1">
                 <p class="menuphoto">
                     <picture>
-                        <source serect="images/cake_sp@2x-100.jpg" media="(max-width767px)">
+                        <source srcset="images/cake_sp@2x-100.jpg" media="(max-width:767px)">
                         <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ写真">
                     </picture>
                 </p>
@@ -148,7 +148,7 @@
         <div class="gallerypage">
             <h2 class="gallerylogo"><img src="images/gallery@2x.png" alt="ギャラリーロゴ"></h2>
         </div>
-        <ul>
+        <!-- <ul>
             <li class="gallery" id="gallery">
                 <p class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="GALLERY1"></p>
                 <p class="galleryphoto"><img src="images/pc_gallary_04-100.jpg" alt="GALLERY2"></p>
@@ -158,7 +158,7 @@
                 <p class="galleryphoto"><img src="images/pc_gallary_01-100.jpg" alt="GALLERY5"></p>
             </li>
 
-        </ul>
+        </ul> -->
         <!-- <div class="gallerypage"> -->
 
         <!-- 編集後スライダー -->
@@ -256,7 +256,7 @@
             $('.gallery-slider').slick({
                 // autoplay: true,
                 // autoplaySpeed: 2000,
-                arrows: false
+                arrows: false,
                 slidesToShow: 5,
                 responsive: [
                     {

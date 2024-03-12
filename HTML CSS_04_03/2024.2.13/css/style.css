@@ -204,7 +204,6 @@ body {
 
 .about_uslogo{
     display: none;
-    visibility: hidden;
 }
 
 /* menu */
@@ -239,6 +238,7 @@ body {
 .menuphoto img{
     border-top-right-radius: 41px;
     margin-top: 40px;
+    width: 100%;
 }
 
 .menu1{
@@ -301,7 +301,8 @@ body {
 
 .event1 p:last-child{
     display: inline-block;
-    border-bottom: 2px solid #4F260B;
+    /* border-bottom: 2px solid #4F260B; */
+    text-decoration: underline;
 } 
 
 .event1 p:first-child{
@@ -528,18 +529,29 @@ iframe{
 
     .about_uslogo{
         width: 160px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 
     .about_ustext2{
         font-size: 9.6vw;
+        margin-top: 35px;
     }
 
     .about_ustext{
         width: auto;
+        margin-top: 35px;
     }
 
     .about_ustext1{
-        visibility: hidden;
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    .about_ustext{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /* .rateph{
@@ -548,9 +560,10 @@ iframe{
 
     .ratephot{
         width: auto;
+        margin-top: 12px;
     }
 
-    .menuphoto img{
+    .ratephot img{
         /* border-radius: 0px; */
         border-bottom-right-radius: 0px;
     }
@@ -561,6 +574,8 @@ iframe{
         display: block;
         /* margin: auto;
         width: 100%; */
+        margin-left: 37px;
+        margin-right: 37px;
     }
 
     .menu{
@@ -573,6 +588,7 @@ iframe{
 
     .menulogo{
         width: 88px;
+        margin-top: 43px;
     }
 
     .menutext{
@@ -580,13 +596,31 @@ iframe{
         margin-top: 17px;
     }
 
+    /* .menuphoto{
+        margin-top: 17px;
+    } */
+
+    .menu img{
+        margin-top: 17px;
+    }
+
+    }
     /* ギャラリー */
 
     .gallerylogo{
         width: 142px;
     }
 
+    .gallery-slider img{
+        width: 100%;
+    }
+
     /* イベント */
+
+    .event{
+        margin: 20px;
+        margin: 20px;
+    }
 
     .eventrog{
         width: 100px;
@@ -636,8 +670,16 @@ iframe{
         margin-left: 20px;
     }
 
+    .desinecafe img{
+        margin-top: 40px;
+    }
+
     .footerinfo{
         padding-left: 20px;
+    }
+
+    .under{
+        margin-top: 40px;
     }
 
     /* totop */
@@ -651,7 +693,7 @@ iframe{
 
 
 
-}
+
 
 
 
