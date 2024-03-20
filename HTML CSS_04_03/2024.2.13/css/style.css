@@ -120,7 +120,7 @@ body {
     /* padding-top: 104px; */
     font-size: 30px;
     font-weight: normal;
-    line-height: 116px;
+    line-height: 3.866;
     text-align: center;
     /* padding-top: 104px; */
     width: 100%;
@@ -131,7 +131,7 @@ body {
     /* padding-top: 52px; */
     font-size: 82px;
     font-weight: normal;
-    line-height: 96px;
+    line-height: 1.17;
     letter-spacing: 0.1em;
     text-align: center;
     /* padding-top: 47px; */
@@ -143,11 +143,15 @@ body {
     padding-top: 16px; 
     font-size: 23px;
     font-weight: normal;
-    line-height: 36px;
+    line-height: 2.571;
     letter-spacing: 0.1em;
     text-align: center;
     width: 100%;
     /* margin-top: 16px; */
+}
+
+.br-sp{
+    display: none;
 }
 
 /* aboutus */
@@ -176,13 +180,13 @@ body {
 .about_ustext2{
     font-size: 44px;
     margin-top: 56px;
-    line-height: 61px;
+    line-height: 1.386;
 }
 
 .about_ustext3{
     font-size: 16px;
     margin-top: 42.5px;
-    line-height: 26px;
+    line-height: 1.625;
 }
 
 .ratephot{
@@ -231,7 +235,7 @@ body {
 
 .menutext{
     font-size: 17px;
-    line-height: 25px;
+    line-height: 1.625;
     margin-top: 25px;
 }
 
@@ -375,7 +379,7 @@ iframe{
 .under{
     margin-top: 73px;
     font-size: 16px;
-    line-height: 35px;
+    line-height: 2.187;
     text-align: center;
 }
 
@@ -502,7 +506,7 @@ iframe{
 
     .secondtext{
         font-size: 10.133vw;
-        /* line-height: 44px; */
+        line-height: 44px;
         letter-spacing: 0.02em;
     }
     
@@ -511,6 +515,10 @@ iframe{
         font-size: 16px;
         line-height: 30px;
         /* font-size: 4.27vw; */
+    }
+
+    .br-sp{
+        display: block;
     }
 
     /* about_us */
@@ -620,6 +628,9 @@ iframe{
     .event{
         margin: 20px;
         margin: 20px;
+        padding-top: 0px;
+        padding-bottom: 23px;
+        padding-left: 0px;
     }
 
     .eventrog{
