@@ -38,7 +38,7 @@ ul{
 }
 
 img{
-    /* max-width: 100%;    */
+    max-width: 100%;   
     border: none;
     vertical-align: bottom;
 }
@@ -101,7 +101,7 @@ h1 img{
 }
 
 .firstpage_img{
-    display: flex;
+    /* display: flex; */
     position: relative;
 }
 
@@ -118,22 +118,22 @@ h1 img{
 @keyframes dog_run {
     0%{
        left: 0vw;
-       top: 0vh; 
+       /* top: 0vh;  */
     }
 
     10%{
         left: 0vw;
-        top: 0vh; 
+        /* top: 0vh;  */
      }
 
     80%{
         left: 70vw;
-        top: 0vh;
+        /* top: 0vh; */
     }
 
     100%{
         left: 70vw;
-        top: 0vh;
+        /* top: 0vh; */
     }
 
 }
@@ -143,9 +143,7 @@ h1 img{
     display: flex;
     width: 21.47vw;
     margin-left: 2.63vw;
-    margin-top: 73vh;
-    position: absolute;
-    
+    margin-top: -30vh;
 }
 
 .ball_illust{
@@ -178,33 +176,118 @@ h1 img{
     width: 5.48vw;
     margin-left: 89.77vw;
     margin-top: 89.49vh;
-    position: absolute;
 }
 
-.all_izz_well{
+/* 左上 */
+.all_izz_well_top_left{
     position: absolute;
-    animation: rotate_anime 3s linear infinite;
-    transform-origin: 100% 100%;
+    animation: rotate_anime 6s linear infinite;
+    transform-origin: top right;
+    top:-0vh
 }
 
 @keyframes rotate_anime {
     0% {
       transform: rotate(0deg);
-      left: 0vw;
-      top: 0vh;
+      /* left: 0vw;
+      top: 0vh; */
     }
     100% {
       transform: rotate(360deg);
-      left: 10vw;
-      top: 10vh;
+      /* left: 10vw;
+      top: 10vh; */
       /* transform-origin: 100% 100%; */
     }
   }
 
-.all_izz_well img{
+.all_izz_well_top_left{
     display: flex;
-    width: 16。87vw;
+    width: 16.87vw;
+}
+
+/* 右上 */
+.all_izz_well_top_right{
     position: absolute;
+    animation: rotate_anime 6s linear infinite;
+    transform-origin: top right;
+    top:-0vh
+}
+
+@keyframes rotate_anime {
+    0% {
+      transform: rotate(0deg);
+      /* left: 0vw;
+      top: 0vh; */
+    }
+    100% {
+      transform: rotate(360deg);
+      /* left: 10vw;
+      top: 10vh; */
+      /* transform-origin: 100% 100%; */
+    }
+  }
+
+.all_izz_well_top_right{
+    display: flex;
+    width: 16.87vw;
+    margin-left: 70vw;
+}
+
+/* 左下 */
+.all_izz_well_bottom_left{
+    position: absolute;
+    animation: rotate_anime 6s linear infinite;
+    transform-origin: top right;
+    top:-0vh
+}
+
+@keyframes rotate_anime {
+    0% {
+      transform: rotate(0deg);
+      /* left: 0vw;
+      top: 0vh; */
+    }
+    100% {
+      transform: rotate(360deg);
+      /* left: 10vw;
+      top: 10vh; */
+      /* transform-origin: 100% 100%; */
+    }
+  }
+
+.all_izz_well_bottom_left{
+    display: flex;
+    width: 16.87vw;
+    margin-top: 60vh;
+}
+
+/* 右下 */
+.all_izz_well_bottom_right{
+    position: absolute;
+    animation: rotate_anime 6s linear infinite;
+    transform-origin: top right;
+    top:-0vh
+}
+
+@keyframes rotate_anime {
+    0% {
+      transform: rotate(0deg);
+      /* left: 0vw;
+      top: 0vh; */
+    }
+    100% {
+      transform: rotate(360deg);
+      /* left: 10vw;
+      top: 10vh; */
+      /* transform-origin: 100% 100%; */
+    }
+  }
+
+.all_izz_well_bottom_right{
+    display: flex;
+    width: 16.87vw;
+    margin-left: 70vw;
+    margin-top: 60vh;
 }
 
 /* セカンドビュー */
@@ -217,7 +300,8 @@ h1 img{
 /* 丸円 */
 .border-radius_top {
     width: 13.36vw;
-    height: 20.25vh;
+    /* 縦幅と横幅を均等にする */
+    aspect-ratio: 1/1;  
     line-height: 200px;
     background-color:#EF9D00;
     border-radius: 50%;
@@ -230,7 +314,7 @@ h1 img{
 
 .border-radius_center{
     width: 5.71vw;
-    height: 8.79vh;
+    aspect-ratio: 1/1;
     line-height: 200px;
     background-color:#EF9D00;
     border-radius: 50%;
@@ -243,7 +327,7 @@ h1 img{
 
 .border-radius_under{
     width: 3.78vw;
-    height: 5.82vh;
+    aspect-ratio: 1/1;
     line-height: 200px;
     background-color:#EF9D00;
     border-radius: 50%;
@@ -263,15 +347,19 @@ h2 img{
     left: 0.39vw;
 }
 
-/* .header{
-    transform: translateY(-100%);
+.header{
+    transform: translateY(-100vh);
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top:1.19vh;
+    left: 3.86vw;
+    transition: 0.3s;
+    z-index: 100;
 }
 
-/* .header.active{
-    transform: none;
-} */
-
  .header.active{
+    transform: translateY(0);
     opacity: 1;
     visibility: visible;
  }
@@ -285,14 +373,9 @@ h2 img{
     position: absolute;
 }
 
-.header_nav{
-    /* position: absolute; */
-    position: fixed;
-    top:1.19vh;
-    left: 3.86vw;
-    opacity: 0;
-    visibility: hidden;
-} 
+/* .header_nav{
+    position: absolute;
+}  */
 
 .header_nav ul{
     display: flex;
@@ -384,17 +467,41 @@ h2 img{
     margin-left: 22vw;
     margin-top: 9.74vh
 }
-
+/* コップ */
 .portfolio_1page span{
-    border-right:3px solid #4D2208 ;
-    border-left: 3px solid transparent#4D2208;
-    border-bottom: 3px solid transparent#4D2208;
+    /* border-right:3px solid #4D2208 ;
+    border-left: 3px solid transparent#4D2208; */
+    border-bottom: 4px solid #4D2208;
     /* transform:rotate(0deg,45deg,0deg,45deg); */
     /* width: 30px;
     border-bottom: 40px solid #55A4A0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     height: 0; */
+    position: relative;
+}
+
+.portfolio_1page span::before,.portfolio_1page span::after{
+    content: "";
+    width: 4px;
+    height: 60px;
+    background: #4D2208;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio_1page span::before{
+    left: 0;
+    transform: rotate(-15deg);
+    transform-origin: left bottom;
+}
+
+.portfolio_1page span::after{
+    right: 0;
+    transform: rotate(15deg);
+    transform-origin: right bottom;
 }
 
 /* ポートフォリオ2 */
@@ -421,10 +528,34 @@ h2 img{
 }
 
 .portfolio_2page span{
-    border-right:3px solid #4D2208 ;
-    border-left: 3px solid #4D2208;
+    /* border-right:3px solid #4D2208 ;
+    border-left: 3px solid #4D2208; */
     border-bottom: 3px solid #4D2208;
     /* transform:rotate(0deg,45deg,0deg,45deg); */
+    position: relative;
+}
+
+.portfolio_2page span::before,.portfolio_2page span::after{
+    content: "";
+    width: 4px;
+    height: 60px;
+    background: #4D2208;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio_2page span::before{
+    left: 0;
+    transform: rotate(-15deg);
+    transform-origin: left bottom;
+}
+
+.portfolio_2page span::after{
+    right: 0;
+    transform: rotate(15deg);
+    transform-origin: right bottom;
 }
 
 /* ポートフォリオ3 */
@@ -457,10 +588,34 @@ h2 img{
 }
 
 .portfolio_3page span{
-    border-right:3px solid #4D2208 ;
-    border-left: 3px solid #4D2208;
-    border-bottom: 3px solid #4D2208;
+    /* border-right:3px solid #4D2208 ;
+    border-left: 3px solid #4D2208; */
+    border-bottom: 4px solid #4D2208;
     /* transform:rotate(0deg,45deg,0deg,45deg); */
+    position: relative;
+}
+
+.portfolio_3page span::before,.portfolio_3page span::after{
+    content: "";
+    width: 4px;
+    height: 60px;
+    background: #4D2208;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio_3page span::before{
+    left: 0;
+    transform: rotate(-15deg);
+    transform-origin: left bottom;
+}
+
+.portfolio_3page span::after{
+    right: 0;
+    transform: rotate(15deg);
+    transform-origin: right bottom;
 }
 
 /* 会社紹介 */
@@ -504,6 +659,7 @@ a.btn--orange {
     height: 24.94vh;
     padding: 0;
     margin-top: 41.57vh;
+    aspect-ratio: 1/1;
   }
 
 
@@ -551,7 +707,8 @@ a.btn--orange {
 
 .instagram_logo img{
     width: 2.7vw;
-    height: 4.16vh;
+    aspect-ratio: 1/1;
+    /* height: 4.16vh; */
     /* margin-top: 0.5vh; */
     margin-left: 3vw;
 }
@@ -569,5 +726,5 @@ a.btn--orange {
 .c_maeno_yudai{
     font-size: 1.16vw;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }

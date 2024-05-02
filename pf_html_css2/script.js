@@ -10,13 +10,15 @@
 
 
 
-const header_disappear = document.querySelector('.header');
+const header_disappear = document.querySelector('#header');
 window.addEventListener('scroll', () => {
     let scroll_X = window.scrollX;
+    console.log(scroll_X);
     if(scroll_X > 2853){
-        header_disappear.classList.add('active');
+        console.log(でる);
+        $('#header').addClass('active');
     }
     else{
-        header_disappear.classList.remove('active');
+        $('#header').removeClass('active');
     }
 });
