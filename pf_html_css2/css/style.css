@@ -290,6 +290,46 @@ h1 img{
     margin-top: 60vh;
 }
 
+/* スクロールポジション */
+.scroll {
+    padding-top: 60px;
+    /* position: fixed; */
+    text-align: center;
+  }
+  /* 矢印のアニメーション部分 */
+  .scroll::before {
+    animation: scroll 2s infinite;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    content: "";
+    height: 20px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+  }
+  /* 矢印のアニメーション */
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+      transform: rotate(-45deg) translate(50%, 50%);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
 /* セカンドビュー */
 .secondpage{
     width: 100vw;
@@ -341,11 +381,16 @@ h1 img{
 
 h2 img{
     width: 6.83vw;
-    /* position: absolute; */
-    position: fixed;
-    top: 9vh;
+    position: absolute;
+    /* position: fixed; */
+    top: 7vh;
     left: 0.39vw;
 }
+
+.header_logo{
+    margin-right: 10vw;
+}
+
 
 .header{
     transform: translateY(-100vh);
@@ -374,7 +419,7 @@ h2 img{
 }
 
 /* .header_nav{
-    position: absolute;
+    display: flex;
 }  */
 
 .header_nav ul{
@@ -484,7 +529,7 @@ h2 img{
 .portfolio_1page span::before,.portfolio_1page span::after{
     content: "";
     width: 4px;
-    height: 60px;
+    height: 3vh;
     background: #4D2208;
     display: block;
     position: absolute;
@@ -538,7 +583,7 @@ h2 img{
 .portfolio_2page span::before,.portfolio_2page span::after{
     content: "";
     width: 4px;
-    height: 60px;
+    height: 3vh;
     background: #4D2208;
     display: block;
     position: absolute;
@@ -598,7 +643,7 @@ h2 img{
 .portfolio_3page span::before,.portfolio_3page span::after{
     content: "";
     width: 4px;
-    height: 60px;
+    height: 3vh;
     background: #4D2208;
     display: block;
     position: absolute;
@@ -655,7 +700,7 @@ a.btn--orange {
   a.btn--circle {
     border-radius: 50%;
     line-height: 24.94vh;
-    width: 16.22vw;
+    /* width: 16.22vw; */
     height: 24.94vh;
     padding: 0;
     margin-top: 41.57vh;
@@ -672,7 +717,7 @@ a.btn--orange {
 /* 自己紹介ページ */
 .my-page{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #FFEFDC;
     position: relative;
 }
@@ -719,12 +764,67 @@ a.btn--orange {
 
 .my_explanation{
     font-size: 1.35vw;
-    margin-left: 50vw;
-    margin-top: -28vh;
+    margin-top: 10vh;
+    margin-left: 2.5vw;
+    position: relative;
 }
 
 .c_maeno_yudai{
     font-size: 1.16vw;
     text-align: center;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
+
+/* 問い合わせボタン */
+.contact_btn{
+    margin-top: 0%;
+}
+
+a.btn--orange {
+    color: #fff;
+    background-color: #EA9900;
+  }
+  
+  a.btn--orange:hover {
+    color: #fff;
+    background: #f56500;
+  }
+  
+  a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  a.btn--circle {
+    border-radius: 50%;
+    line-height: 24.94vh;
+    /* width: 16.22vw; */
+    height: 24.94vh;
+    padding: 0;
+    margin-top: 41.57vh;
+    aspect-ratio: 1/1;
+  }
+
+/* ジャンプページ */
+
+/* ポートフォリオジャンプページ */
+.portfolio_whole{
+    width: 800vw;
+    display: block;
+}
+
+/* 会社紹介ジャンプページ */
+.company-page_whole{
+    width: 800vw;
+}
+
+/* ブログジャンプページ */
+.blog_whole{
+    width: 800vw;
+}
+
+/* 問い合わせジャンプページ */
+.contact_whole{
+    width: 800vw;
+}
+

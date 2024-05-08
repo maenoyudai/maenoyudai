@@ -14,8 +14,9 @@ const header_disappear = document.querySelector('#header');
 window.addEventListener('scroll', () => {
     let scroll_X = window.scrollX;
     console.log(scroll_X);
-    if(scroll_X > 2853){
-        console.log(でる);
+    let window_width = window.innerWidth;
+    if(scroll_X > window_width){
+        console.log('でる');
         $('#header').addClass('active');
     }
     else{
