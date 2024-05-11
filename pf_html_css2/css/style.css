@@ -92,6 +92,7 @@ button.btn {
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 h1 img{
@@ -293,8 +294,11 @@ h1 img{
 /* スクロールポジション */
 .scroll {
     padding-top: 60px;
-    /* position: fixed; */
+    position: fixed;
     text-align: center;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   /* 矢印のアニメーション部分 */
   .scroll::before {
@@ -331,7 +335,7 @@ h1 img{
 
 
 /* セカンドビュー */
-.secondpage{
+.secondpage  {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -484,12 +488,12 @@ h2 img{
 
 
 /* ポートフォリオ1 */
-.portfolio_1page{
+.portfolio_1page {
     width: 100vw;
     height: 100vh;
 }
 
-.portfolio01{
+.portfolio01 .portfolio01_jump{
     display: flex;
 }
 
@@ -778,6 +782,8 @@ a.btn--orange {
 /* 問い合わせボタン */
 .contact_btn{
     margin-top: 0%;
+    font-size: 1.35vw;
+    font-weight: 700;
 }
 
 a.btn--orange {
@@ -795,36 +801,141 @@ a.btn--orange {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   }
   
-  a.btn--circle {
+  a.btn--circle2 {
     border-radius: 50%;
     line-height: 24.94vh;
     /* width: 16.22vw; */
     height: 24.94vh;
     padding: 0;
-    margin-top: 41.57vh;
+    /* margin-top: 41.57vh; */
     aspect-ratio: 1/1;
+    display: block;
+    margin-left: auto;
+    text-align: center;
   }
 
 /* ジャンプページ */
 
 /* ポートフォリオジャンプページ */
 .portfolio_whole{
-    width: 800vw;
+    /* width: 800vw; */
     display: block;
 }
 
+/* 全画面表示ボタン */
+button {
+    /* background-color:#EA9900;
+    border: #EA9900;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    margin-left: 70vw;
+    width: 30vw;
+    height: 30vh; */
+    width: 100px;
+    height: 100px;
+    background: #EA9900;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border: #EA9900;
+    margin-left: 80vw;
+}
+button:hover {
+    background-color: #f56500;
+}
+
+
 /* 会社紹介ジャンプページ */
 .company-page_whole{
-    width: 800vw;
+    /* width: 800vw; */
+    display: block;
 }
 
 /* ブログジャンプページ */
 .blog_whole{
-    width: 800vw;
+    /* width: 800vw; */
+    display: block;
 }
 
 /* 問い合わせジャンプページ */
 .contact_whole{
-    width: 800vw;
+    /* width: 800vw; */
+    display: block;
 }
 
+.contact__item1{
+    margin-left: 25%;
+    margin-top: 5vh;
+}
+
+.contact__item2{
+    margin-left: 25%;
+    margin-top: 7vh;
+}
+
+.contact__item3{
+    margin-left: 25%;
+    margin-top: 7vh;
+}
+
+.submit-btn{
+    margin-left: 25%;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    
+}
+
+#name{
+    width: 50vw;
+    background-color: #FFEFDC;
+    border: none;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+#mail{
+    width: 50vw;
+    background-color: #FFEFDC;
+    border: none;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+#contents{
+    width: 50vw;
+    height: 55vh;
+    background-color: #FFEFDC;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit" i] {
+    background-color: #EA9900;
+    width: 10vw;
+    border: none;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.contact__list_flex p{
+    writing-mode: vertical-rl;
+    margin-left: 10vw;
+    font-size: 2vw;
+    margin-top: 10vh;
+    /* line-height: 3vh; */
+}
+
+.contact__list_flex{
+    display: flex;
+}
+
+.contact__list{
+    margin-top: 0vh;
+}
