@@ -9,7 +9,7 @@
 // });
 
 
-
+// ヘッダー
 const header_disappear = document.querySelector('#header');
 window.addEventListener('scroll', () => {
     let scroll_X = window.scrollX;
@@ -23,6 +23,22 @@ window.addEventListener('scroll', () => {
         $('#header').removeClass('active');
     }
 });
+
+// ヘッダー縦ページ
+const header_disappears = document.querySelector('#header');
+window.addEventListener('scroll', () => {
+    let scroll_Y = window.scrollY;
+    console.log(scroll_Y);
+    let window_width = window.innerWidth;
+    if(scroll_Y > window_width){
+        console.log('でる');
+        $('#header').addClass('active');
+    }
+    else{
+        $('#header').removeClass('active');
+    }
+});
+
 
 // モーダル
 const btn = document.querySelectorAll(".modal-toggle");
@@ -55,3 +71,17 @@ event.target.classList.remove('show');
 }
 }
 });
+
+// ローディング
+window.onload = function() {
+    // loaderを消す
+    // const loader = document.querySelector(".loader")
+    // loader.classList.add("loaded")
+    // ファーストビューを見せる
+    setTimeout(() => {
+    // loaderを消す
+    const loader = document.querySelector(".loader")
+    loader.classList.add("loaded")
+    // ファーストビューを見せる
+    }, 1300)
+};

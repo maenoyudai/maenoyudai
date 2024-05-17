@@ -87,6 +87,67 @@ button.btn {
     display: flex;
 }
 
+/* ローディング */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader body{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 400px;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relatives;
+}
+.loader span{
+    position: absolute;
+    border: 2px solid #4D2208;
+    width: 100%;
+    height: 100%;
+    animation: loader_animate 5s linear infinite;
+}
+.loader span:nth-child(1) {
+    border-radius: 20% 80% 31% 69% / 53% 28% 72% 47%  ;
+}
+.loader span:nth-child(2) {
+    animation-direction: revers;
+    border-radius: 57% 43% 47% 53% / 43% 25% 75% 57% ;
+}
+.loader span:nth-child(3) {
+    animation-delay: 3s;
+    border-radius: 32% 68% 75% 25% / 40% 48% 52% 60%  ;
+}
+.loaded{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+@keyframes loader_animates {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader h2{
+    color: white;
+    font-size: 2.3vw;
+}
+
 /* ファーストビュー */
 .firstpage{
     width: 100vw;
@@ -434,7 +495,7 @@ h2 img{
 }
 
 .header_nav ul li{
-    margin: 15.5vh 6.8vw;
+    margin: 15.5vh 6.8vw 0vh;
 }
 
 .secondpage p {
@@ -491,10 +552,12 @@ h2 img{
 .portfolio_1page {
     width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 
 .portfolio01 {
     display: flex;
+
 }
 
 .portfolio01 h2{
@@ -611,7 +674,7 @@ h2 img{
 .portfolio_3page{
     width: 100vw;
     height: 100vh;
-    
+    background-color: white;
 }
 
 .portfolio03{
@@ -676,6 +739,7 @@ h2 img{
     justify-content: space-around;
 }
 
+
 .company-page img{
     width: 26.6vw;
     margin-top: 25vh;
@@ -724,6 +788,7 @@ a.btn--orange {
     /* height: 100vh; */
     background-color: #FFEFDC;
     position: relative;
+    /* height: 100vh; */
 }
 
 .maeno_yudai_page{
@@ -814,6 +879,10 @@ a.btn--orange {
     text-align: center;
   }
 
+  .kobushi{
+    display: none;
+  }
+
 /* ジャンプページ */
 
 /* ポートフォリオジャンプページ */
@@ -890,6 +959,7 @@ a.btn--orange {
 .portfolio_5page_jump{
     /* width: 100vh; */
     height: 100vh;
+    background-color: white;
 }
 
 .portfolio05{
@@ -1160,7 +1230,16 @@ button:hover {
             position: relative;
          }
 }
- 
+
+.modal-inner-container img{
+    height: 80vh;
+    width: auto;
+}
+
+.modal-inner-container_hamburger img{
+    height: 30vh;
+
+}
  
  
 
@@ -1169,6 +1248,10 @@ button:hover {
 .company-page_whole{
     /* width: 800vw; */
     display: block;
+}
+
+.company-page_flex img{
+    margin-top: 0%;
 }
 
 /* .utility-partners_jump,.henrietta_jump,.takahashi_kanri_jump,.koshigaya_boys_jump{
@@ -1183,12 +1266,13 @@ button:hover {
 
 .company-page_jump1 img{
     width: 30vw;
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    margin-right: 3vw;
 }
 
-.company-page_jump1 p{
+/* .company-page_jump1 p{
     margin-left: 31vw;
-}
+} */
 
 .company-page_jump1 button{
     margin-bottom: 10vh;
@@ -1201,13 +1285,13 @@ button:hover {
 
 .company-page_jump2 img{
     max-width: 350%;
-    margin-left: 35%;
-
+    /* margin-left: 35%; */
+    margin-right: 3vw;
 }
 
-.company-page_jump2 p{
+/* .company-page_jump2 p{
     margin-left: 20vw;
-}
+} */
 
 .company-page_jump3{
     background-color: #fff;
@@ -1217,12 +1301,21 @@ button:hover {
 
 .company-page_jump3 img{
     max-width: 300%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    margin-right: 3vw;
 }
 
 .company-page_jump4 img{
     max-width: 300%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    margin-right: 3vw;
+}
+
+.company-page_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
 }
 
 /* ブログジャンプページ */
@@ -1237,23 +1330,27 @@ button:hover {
     display: block;
 }
 
-.contact__item1{
+.contact__list{
     margin-left: 25%;
+}
+
+.contact__item1{
+    /* margin-left: 25%; */
     margin-top: 5vh;
 }
 
 .contact__item2{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 7vh;
 }
 
 .contact__item3{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 7vh;
 }
 
 .submit-btn{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 3vh;
     margin-bottom: 6vh;
     width: 100%;
@@ -1307,3 +1404,447 @@ input[type="submit" i] {
     margin-top: 0vh;
     margin-left: 3vw;
 }
+
+/* レスポンシブmax-wids 1100 max-wids 767 max-wids 599 */
+
+@media screen and (max-width: 1100px){
+    /* ファーストページ */
+    .whole{
+        height: 800vh;
+        display: block;
+        width: 100vw;
+    }
+
+    h2 img {
+        top: 10vh;
+    }
+
+    .dog_illust img{
+        margin-top: -23vh;
+    }
+
+    .secondpage p{
+        margin-left: 35vw;
+        font-size: 2vw;
+    }
+
+    .border-radius_top{
+        margin-left: 10vw;
+    }
+
+    .border-radius_center{
+        margin-left: 20vw;
+    }
+
+    .border-radius_under {
+        margin-left: 15vw;
+    }
+
+    /* .portfolio_1page span::before, .portfolio_1page span::after{
+        height: 2.5vh;
+    }
+    .portfolio_2page span::before, .portfolio_2page span::after{
+        height: 2.5vh;
+    }
+    .portfolio_3page span::before, .portfolio_3page span::after{
+        height: 2.5vh;
+    } */
+
+    .portfolio_3page a.btn--circle{
+        margin-left: 5vw;
+    }
+    .btn, a.btn, button.btn{
+        font-size: 1.5vw;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+
+    .my-page {
+        height: 100vh;
+    }
+
+    .maeno_yudai_page{
+        margin-top: 0%;
+    }
+
+    .my-page .plofile-img{
+        margin-top: 25vh;
+    }
+
+    .c_maeno_yudai{
+        margin-top: 35vh;
+    }
+
+    .profile {
+        margin-top: 25vh;
+    }
+
+    .my_explanation{
+        margin-top: 7vh;
+    }
+
+    .c_maeno_yudai{
+        margin-top: 15vh;
+    }
+
+    .company-page p{
+        font-size: 1.5vw;
+    }
+
+    .contact_btn{
+        font-size: 1.5vw;
+    }
+
+    /* ポートフォリオジャンプページ */
+    .explanation{
+        font-size: 2vw;
+        margin-left: 23vw;
+    }
+
+    .header_logo_portfolio img{
+        width: 6vw;
+        margin-left: 0%;
+        margin-top: 1vh;
+    }
+
+    .click-btn{
+        font-size: 1.5vw;
+    }
+
+    .portfolio01 h2{
+        font-size: 3vw;
+    }
+    .portfolio02 h2{
+        font-size: 3vw;
+    }
+    .portfolio03 h2{
+        font-size: 3vw;
+    }
+    .portfolio04 h2{
+        font-size: 3vw;
+    }
+    .portfolio05 h2{
+        font-size: 3vw;
+    }
+    .portfolio06 h2{
+        font-size: 3vw;
+    }
+
+    /* 会社紹介ページ */
+    button {
+        font-size: 1.25vw;
+    }
+
+    .company-page_jump1{
+        height: 75vh;
+    }
+    .company-page_jump2{
+        height: 75vh;
+    }
+    .company-page_jump3{
+        height: 75vh;
+    }
+    .company-page_jump4{
+        height: 75vh;
+    }
+    .company-page_flex{
+        margin-top: 17.5vh;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    h2 img {
+        top: 12vh;
+    }
+    .dog_illust img {
+        margin-top: -18vh;
+    }
+
+    .border-radius_top {
+        margin-left: 3vw;
+        margin-top: 27vh;
+    }
+    .border-radius_center {
+        margin-left: 10vw;
+        margin-top: 52vh;
+    }
+    .border-radius_under {
+        margin-left: 8vw;
+        margin-top: 70vh;
+    }
+
+    .secondpage p {
+        margin-left: 18vw;
+        font-size: 2.4vw;
+        line-height: 7vh;
+        margin-left: 18vw;
+    }
+    .mae {
+        font-size: 3.5vw;
+    }
+
+    .portfolio01 h2 {
+        font-size: 4vw;
+    }
+    .portfolio02 h2 {
+        font-size: 4vw;
+    }
+    .portfolio03 h2 {
+        font-size: 4vw;
+    }
+    .portfolio04 h2 {
+        font-size: 4vw;
+    }
+    .portfolio05 h2 {
+        font-size: 4vw;
+    }
+    .portfolio06 h2 {
+        font-size: 4vw;
+    }
+
+    .portfolio01 img{
+        margin-left: 12.5vw;
+    }
+    .portfolio02 img{
+        margin-left: 12.5vw;
+    }
+    .portfolio03 img{
+        margin-left: 12.5vw;
+    }
+    .portfolio04 img{
+        margin-left: 12.5vw;
+    }
+    .portfolio05 img{
+        margin-left: 12.5vw;
+    }
+    .portfolio06 img{
+        margin-left: 12.5vw;
+    }
+
+    .explanation{
+        font-size: 2.5vw;
+    }
+
+    a.btn--circle {
+        height: 12vh;
+        line-height: 12vh;
+    }
+
+    .company-page {
+        display: block;
+    }
+
+    .company-page img {
+        margin-top: 5vh;
+        width: 35vw;
+        margin-left: 30%;
+    }
+    .company-page p {
+        font-size: 2vw;
+        margin-left: 30%;
+    }
+
+    a.btn--circle2 {
+        height: 12vh;
+        line-height: 12vh;
+        margin-top: 5vh;
+    }
+    a.company_btn{
+        margin-top: -10vh;
+        margin-left: 70%;
+    }
+
+    .maeno_yudai_page {
+        display: block;
+    }
+
+    .plofile-img img{
+        margin-top: 2vh;
+        margin-left: 50%;
+    }
+
+    .profile {
+        margin-top: 2vh;
+        margin-left: 31vw;
+    }
+    .name {
+        font-size: 3vw;
+    }
+
+    .instagram_logo img {
+        width: 4vw;
+    }
+    .maeno_yudai{
+        font-size: 2vw;
+    }
+    .my_explanation {
+        font-size: 2vw;
+        margin-left: 25vw;
+        margin-top: 2vh;
+        /* width: 45vw; */
+    }
+
+    a.btn--circle2{
+        margin-left: 70vw;
+    }
+
+    .kobushi{
+        display: block;
+        margin-left: 25vw;
+      }
+    
+    .kobushi img{
+        width: 30vw;
+      }
+    .kobushi1{
+        margin-top: -5vh;
+    }
+    .kobushi2{
+        margin-left: 30vw;
+        margin-top: -5vh;
+    }
+
+    .c_maeno_yudai{
+    margin-top: 13vh;
+    }
+
+    /* 会社紹介ジャンプページ */
+    .company-page_jump1{
+        height: 50vh;
+    }
+    .company-page_jump2{
+        height: 50vh;
+    }
+    .company-page_jump3{
+        height: 50vh;
+    }
+    .company-page_jump4{
+        height: 50vh;
+    }
+    .company-page_flex{
+        margin-top: 0%;
+    }
+    .utility-partners_jump p{
+        margin-left: 10%;
+    }
+
+    .company-page_jump2 img{
+        margin-left: 5vw;
+    }
+
+    .henrietta_jump p{
+        margin-left: 0%;
+    }
+
+    .company-page_jump3 img{
+        margin-left: 1vw;
+    }
+    .takahashi_kanri_jump p{
+        margin-left: 0%;
+    }
+
+    .company-page_jump4 img{
+        margin-left: 3vw;
+    }
+    .koshigaya_boys_jump p{
+        margin-left: 0%;
+    }
+
+    /* 問い合わせジャンプページ */
+    .contact__list_flex p {
+        font-size: 3vw;
+        margin-left: 10vw;
+    }
+
+    /* .my_explanation {
+        margin-left: 15vw;
+    } */
+
+
+}
+
+ @media screen and (max-width: 599px){
+    h2 img {
+        top: 12vh;
+    }
+
+    .border-radius_top{
+        margin-top: 5vh;
+    }
+    .border-radius_center {
+        margin-top: 27vh;
+    }
+    .border-radius_under{
+        margin-top: 43vh;
+    }
+
+    .secondpage {
+        height: 60vh;
+    }
+    .secondpage p{
+        margin-top: 10vh;
+        line-height: 6vh;
+        font-size: 2.5vw;
+    }
+    .mae {
+        font-size: 4vw;
+    }
+
+
+    .portfolio01 h2 {
+        font-size: 5vw;
+    }
+    .portfolio02 h2 {
+        font-size: 5vw;
+    }
+    .portfolio03 h2 {
+        font-size: 5vw;
+    }
+    .portfolio04 h2 {
+        font-size: 5vw;
+    }
+    .portfolio05 h2 {
+        font-size: 5vw;
+    }
+    .portfolio06 h2 {
+        font-size: 5vw;
+    }
+
+
+    .portfolio01 img {
+        margin-left: 10vw;
+    }
+    .portfolio02 img {
+        margin-left: 10vw;
+    }
+    .portfolio03 img {
+        margin-left: 10vw;
+    }
+    .portfolio04 img {
+        margin-left: 10vw;
+    }
+    .portfolio05 img {
+        margin-left: 10vw;
+    }
+    .portfolio06 img {
+        margin-left: 10vw;
+    }
+
+    .explanation {
+        font-size: 3vw;
+    }
+
+
+    .company-page img {
+        width: 50vw;
+        margin-top: 3vh;
+    }
+    .company-page p {
+        font-size: 2.5vw;
+    }
+
+    }
