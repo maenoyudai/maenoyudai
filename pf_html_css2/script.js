@@ -83,5 +83,11 @@ window.onload = function() {
     const loader = document.querySelector(".loader")
     loader.classList.add("loaded")
     // ファーストビューを見せる
-    }, 1300)
+    }, 4000)
+    setTimeout(() => {
+        // loaderを消す
+        const loader = document.querySelector(".loader")
+        loader.classList.add("delete")
+        // ファーストビューを見せる
+        }, 4000)
 };

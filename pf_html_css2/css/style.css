@@ -93,14 +93,7 @@ button.btn {
     padding: 0;
     box-sizing: border-box;
 }
-.loader body{
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .loader{
     width: 400px;
     height: 400px;
@@ -108,30 +101,51 @@ button.btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relatives;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#FFEFDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
 }
 .loader span{
     position: absolute;
-    border: 2px solid #4D2208;
-    width: 100%;
-    height: 100%;
-    animation: loader_animate 5s linear infinite;
+    border: none;
+    width: 50%;
+    height: 50%;
+    animation: loader_animate 2s linear infinite;
 }
-.loader span:nth-child(1) {
-    border-radius: 20% 80% 31% 69% / 53% 28% 72% 47%  ;
+.loader span img{
+    width: 20vw;
+    object-fit: cover;
+}
+/* .loader span:nth-child(1) {
+    animation-name: loader_animates;
+    border-radius:45% 45% ;
 }
 .loader span:nth-child(2) {
+    animation-name: loader_animates;
     animation-direction: revers;
-    border-radius: 57% 43% 47% 53% / 43% 25% 75% 57% ;
-}
-.loader span:nth-child(3) {
-    animation-delay: 3s;
-    border-radius: 32% 68% 75% 25% / 40% 48% 52% 60%  ;
+    border-radius: 40% 40%;
+} */
+.loader span:nth-child(1) {
+    animation-name: loader_animates;
+    /* animation-delay: 3s; */
+    border-radius: 50% 50%   ;
 }
 .loaded{
     opacity: 0;
+    display: none;
     transition: all 0.3s;
 }
+.delete{
+    display: none;
+}
+
 
 
 @keyframes loader_animates {
@@ -144,7 +158,7 @@ button.btn {
 }
 
 .loader h2{
-    color: white;
+    color: #4D2208;
     font-size: 2.3vw;
 }
 
@@ -157,14 +171,16 @@ button.btn {
 }
 
 h1 img{
-    width: 100vw;
     height: 100vh;
     display: flex;
+    width: auto;
+    object-fit: cover;
 }
 
 .firstpage_img{
     /* display: flex; */
     position: relative;
+    object-fit: cover;
 }
 
 .dog_illust{
@@ -206,6 +222,7 @@ h1 img{
     width: 21.47vw;
     margin-left: 2.63vw;
     margin-top: -25vh;
+    object-fit: cover;
 }
 
 .ball_illust{
@@ -216,6 +233,7 @@ h1 img{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: center bottom;
+    object-fit: cover;
 }
 
 @keyframes bound {
@@ -238,6 +256,7 @@ h1 img{
     width: 5.48vw;
     margin-left: 89.77vw;
     margin-top: 89.49vh;
+    object-fit: cover;
 }
 
 /* 左上 */
@@ -414,7 +433,7 @@ h1 img{
     text-align: center; */
     position: absolute;
     margin-top: 31vh;
-    margin-left: 15vw;
+    margin-left: 10vw;
   }
 
 .border-radius_center{
@@ -427,7 +446,7 @@ h1 img{
     text-align: center; */
     position: absolute;
     margin-top: 60vh;
-    margin-left: 25vw;
+    margin-left: 20vw;
 }
 
 .border-radius_under{
@@ -440,7 +459,7 @@ h1 img{
     text-align: center; */
     position: absolute;
     margin-top: 75vh;
-    margin-left: 18vw;
+    margin-left: 15vw;
 }
 
 
@@ -450,6 +469,7 @@ h2 img{
     /* position: fixed; */
     top: 7vh;
     left: 0.39vw;
+    object-fit: cover;
 }
 
 .header_logo{
@@ -502,8 +522,8 @@ h2 img{
     font-size: 1.35vw;
     /* 左から縦文字 */
     writing-mode: vertical-rl;
-    line-height: 7.96vh;
-    margin-left: 48vw;
+    line-height: 7.96vw;
+    margin-left: 30vw;
     margin-top: 33.5vh;
     border-right:1px solid #4D2208 ;
     position: absolute;
@@ -572,6 +592,7 @@ h2 img{
     width: 74.13vw;
     margin-left: 14.98vw;
     margin-top: 25vh;
+    object-fit: cover;
 }
 
 .explanation{
@@ -637,6 +658,7 @@ h2 img{
     width: 53.2vw;
     margin-left: 14.98vw;
     margin-top: 25vh;
+    object-fit: cover;
 }
 
 .portfolio_2page span{
@@ -693,6 +715,7 @@ h2 img{
     width: 46.56vw;
     margin-left: 14.98vw;
     margin-top: 25vh;
+    object-fit: cover;
 }
 
 .portfolio_3page a.btn--circle {
@@ -891,6 +914,7 @@ a.btn--orange {
     display: block;
 }
 
+
 .portfolio_2page_jump{
     background-color: #FFEFDC;
 }
@@ -1074,6 +1098,15 @@ a.btn--orange {
     right: 0;
     transform: rotate(15deg);
     transform-origin: right bottom;
+}
+
+.header_logo_portfolio img{
+    width: 6vw;
+    margin-left: 0%;
+    margin-top: 1vh;
+}
+.portfolio_4page_jump{
+    z-index: 100;
 }
 
 /* 全画面表示ボタン */
@@ -1426,6 +1459,7 @@ input[type="submit" i] {
     .secondpage p{
         margin-left: 35vw;
         font-size: 2vw;
+        line-height: 7vw;
     }
 
     .border-radius_top{
@@ -1509,6 +1543,12 @@ input[type="submit" i] {
         margin-left: 0%;
         margin-top: 1vh;
     }
+    .header_nav ul li {
+        margin: 15.5vh 6.8vw 0vh;
+    }
+    .header_nav ul {
+        font-size: 1.6vw;
+    }
 
     .click-btn{
         font-size: 1.5vw;
@@ -1557,6 +1597,53 @@ input[type="submit" i] {
 }
 
 @media screen and (max-width: 767px){
+
+    .whole {
+        height: 685vh;
+    }
+
+    .secondpage{
+        height: 60vh;
+    }
+    .portfolio_1page {
+        height: 75vh;
+    }
+    .portfolio01 h2 {
+        margin-top: 20%;
+    }
+    .portfolio01 img{
+        margin-top: 20%;
+    }
+
+    .portfolio_2page {
+        height: 75vh;
+    }
+    .portfolio02 h2 {
+        margin-top: 20%;
+    }
+    .portfolio02 img{
+        margin-top: 20%;
+    }
+    
+
+    .portfolio_3page{
+        height: 75vh;
+    }
+    .portfolio03 h2 {
+        margin-top: 20%;
+    }
+    .portfolio03 img{
+        margin-top: 20%;
+    }
+
+    .explanation {
+        margin-top: 5vh;
+    }
+
+    /* .portfolio_page {
+        height: 75vh;
+    } */
+
     h2 img {
         top: 12vh;
     }
@@ -1566,22 +1653,23 @@ input[type="submit" i] {
 
     .border-radius_top {
         margin-left: 3vw;
-        margin-top: 27vh;
+        margin-top: 5vh;
     }
     .border-radius_center {
         margin-left: 10vw;
-        margin-top: 52vh;
+        margin-top: 30vh;
     }
     .border-radius_under {
         margin-left: 8vw;
-        margin-top: 70vh;
+        margin-top: 50vh;
     }
 
     .secondpage p {
         margin-left: 18vw;
         font-size: 2.4vw;
-        line-height: 7vh;
-        margin-left: 18vw;
+        line-height: 7.5vw;
+        margin-left: 30vw;
+        margin-top: 10vh;
     }
     .mae {
         font-size: 3.5vw;
@@ -1639,7 +1727,7 @@ input[type="submit" i] {
     }
 
     .company-page img {
-        margin-top: 5vh;
+        margin-top: 3vh;
         width: 35vw;
         margin-left: 30%;
     }
@@ -1651,10 +1739,10 @@ input[type="submit" i] {
     a.btn--circle2 {
         height: 12vh;
         line-height: 12vh;
-        margin-top: 5vh;
+        /* margin-top: 5vh; */
     }
     a.company_btn{
-        margin-top: -10vh;
+        margin-top: -15vh;
         margin-left: 70%;
     }
 
@@ -1699,6 +1787,7 @@ input[type="submit" i] {
     
     .kobushi img{
         width: 30vw;
+        margin-top: -3vh;
       }
     .kobushi1{
         margin-top: -5vh;
@@ -1709,7 +1798,7 @@ input[type="submit" i] {
     }
 
     .c_maeno_yudai{
-    margin-top: 13vh;
+    margin-top: 5vh;
     }
 
     /* 会社紹介ジャンプページ */
@@ -1772,6 +1861,16 @@ input[type="submit" i] {
         top: 12vh;
     }
 
+    .header_nav ul {
+        font-size: 2vw;
+    }
+    .header_nav ul li {
+        margin: 15.5vh 4.2vw 0vh;
+    }
+    .header_logo{
+        margin-right: 25vw;
+    }
+
     .border-radius_top{
         margin-top: 5vh;
     }
@@ -1787,7 +1886,7 @@ input[type="submit" i] {
     }
     .secondpage p{
         margin-top: 10vh;
-        line-height: 6vh;
+        line-height: 8vw;
         font-size: 2.5vw;
     }
     .mae {
@@ -1839,12 +1938,33 @@ input[type="submit" i] {
     }
 
 
+    .plofile-img img{
+        margin-left: 60%;
+    }
     .company-page img {
-        width: 50vw;
+        width: 45vw;
         margin-top: 3vh;
+    }
+    .name{
+        margin-left: 1px;
     }
     .company-page p {
         font-size: 2.5vw;
+    }
+    .my_explanation {
+        font-size: 12px;
+        width: 45vw;
+        margin-left: 30%;
+    }
+    .my_explanation br{
+        display: none;
+    }
+    a.btn--circle2 {
+        margin-left: 68vw;
+    }
+    .kobushi img{
+        margin-top: 3vh;
+        margin-left: -5%;
     }
 
     }
