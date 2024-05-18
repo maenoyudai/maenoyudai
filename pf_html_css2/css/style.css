@@ -1727,7 +1727,7 @@ input[type="submit" i] {
     }
 
     .company-page img {
-        margin-top: 3vh;
+        margin-top: 5vh;
         width: 35vw;
         margin-left: 30%;
     }
@@ -1752,7 +1752,11 @@ input[type="submit" i] {
 
     .plofile-img img{
         margin-top: 2vh;
-        margin-left: 50%;
+        margin-left: 60%;
+    }
+
+    .my_explanation br{
+        display: none;
     }
 
     .profile {
@@ -1761,6 +1765,7 @@ input[type="submit" i] {
     }
     .name {
         font-size: 3vw;
+        margin-left: 0.1px;
     }
 
     .instagram_logo img {
@@ -1771,9 +1776,9 @@ input[type="submit" i] {
     }
     .my_explanation {
         font-size: 2vw;
-        margin-left: 25vw;
+        margin-left: 30vw;
         margin-top: 2vh;
-        /* width: 45vw; */
+        width: 45vw;
     }
 
     a.btn--circle2{
@@ -1786,19 +1791,20 @@ input[type="submit" i] {
       }
     
     .kobushi img{
-        width: 30vw;
+        width: 25vw;
         margin-top: -3vh;
+        margin-left: -3vw;
       }
     .kobushi1{
-        margin-top: -5vh;
+        margin-top: -8vh;
     }
     .kobushi2{
         margin-left: 30vw;
-        margin-top: -5vh;
+        margin-top: -1vh;
     }
 
     .c_maeno_yudai{
-    margin-top: 5vh;
+    margin-top: 2vh;
     }
 
     /* 会社紹介ジャンプページ */
@@ -1888,6 +1894,7 @@ input[type="submit" i] {
         margin-top: 10vh;
         line-height: 8vw;
         font-size: 2.5vw;
+        margin-left: 27vw;
     }
     .mae {
         font-size: 4vw;
@@ -1943,10 +1950,11 @@ input[type="submit" i] {
     }
     .company-page img {
         width: 45vw;
-        margin-top: 3vh;
+        margin-top: 5vh;
     }
     .name{
         margin-left: 1px;
+        font-size: 20px;
     }
     .company-page p {
         font-size: 2.5vw;
