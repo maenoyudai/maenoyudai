@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前野ゆうだいウェブサイト</title>
+    <meta name="description"
+        content="複数のペットと生活している経営者。会社はメインが不動産業。子会社としてネイルサロンと水道会社を経営して、NPO法人の理事にも就任した仕事以外はペットと遊ぶかゴルフをするかの2択で、これからも色々な事業を立ち上げたいと考えている。そしてそんな様子を発信する為に作ったのが前野ゆうだいウェブサイト。">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- NOTOSANS読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="contact_whole">
+
+        <!-- ファーストビュー -->
+        <div class="firstpage">
+            <div class="firstpage_img">
+                <h1><img src="images/topimg.jpg" alt="前野ゆうだいウェブサイト" />
+                </h1>
+
+                <p class="dog_illust">
+                    <img src="images/dog_illust_ps.gif" alt="犬のロゴ">
+                </p>
+
+                <p class="ball_illust">
+                    <img src="images/22375691-[更新済み].png" alt="野球ボールのロゴ">
+                </p>
+
+                <p class="all_izz_well_top_left">
+                    <img src="images/Aal-Izz-Well.png" alt="きっと上手くいくのロゴ">
+                </p>
+                <p class="all_izz_well_top_right">
+                    <img src="images/Aal-Izz-Well.png" alt="きっと上手くいくのロゴ">
+                </p>
+                <p class="all_izz_well_bottom_left">
+                    <img src="images/Aal-Izz-Well.png" alt="きっと上手くいくのロゴ">
+                </p>
+                <p class="all_izz_well_bottom_right">
+                    <img src="images/Aal-Izz-Well.png" alt="きっと上手くいくのロゴ">
+                </p>
+            </div>
+
+        </div>
+
+        <form class="contact"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcCkbhOUNgwmCQN_fd5zqs3S2eMwmgCnnHI9febOGvUMwbLw/formResponse"
+            method="post">
+            <div class="contact__list_flex">
+                <p>ご依頼やご質問等、お気軽に<br>
+                    お問い合わせください。<br>
+                    お問い合わせ内容を確認した後<br>
+                    ご返信させて頂きます。<br>
+                </p>
+                <!-- </div> -->
+                <div class="contact__list">
+                    <!-- ヘッダー -->
+                    <header id="header" class="header">
+                        <div class=header_logo>
+                            <h2><img src="images/mae.png"></h2>
+                        </div>
+                        <nav class="header_nav">
+
+                            <ul>
+                                <!-- <div class=header_logo>
+                                    <h2><img src="images/mae.png"></h2>
+                                </div> -->
+                                <li><a href="index.html">top</a></li>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                                <li><a href="works.html">works</a></li>
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="contact__item1">
+                        <div class="name_fill">
+                            <label for="name">お名前<span>（※必須）</span></label>
+                        </div>
+                        <div class="name_fill_box">
+                            <input type="text" name="entry.2005620554" id="name" placeholder="鈴木　太郎" required />
+                        </div>
+                    </div>
+                    <div class="contact__item2">
+                        <div class="address">
+                            <label for="company">メールアドレス<span>（※必須）</span></label>
+                        </div>
+                        <div class="address_box">
+                            <input type="email" name="entry.1045781291" id="mail" placeholder="sample@gmail.com"
+                                required />
+                        </div>
+                    </div>
+                    <div class="contact__item3">
+                        <div class="inquiry">
+                            <label for="contents">お問い合わせ内容<span>（※必須）</span></label>
+                        </div>
+                        <div class="inquiry_box">
+                            <textarea name="entry.839337160" id="contents" cols="30" rows="10"
+                                placeholder="お問い合わせ内容が入ります。" required></textarea>
+                        </div>
+                    </div>
+                    <div class="submit-btn">
+                        <input type="submit" value="送信" />
+                    </div>
+                </div>
+                <!-- <div class="submit-btn">
+                    <input type="submit" value="送信" />
+                </div> -->
+            </div>
+        </form>
