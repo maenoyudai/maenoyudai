@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="index">
     <div class="whole">
 
         <!-- ローディング -->
@@ -35,7 +35,7 @@
                 <div class="firstpage_img">
                     <h1><img src="images/topimg.jpg" alt="前野ゆうだいウェブサイト" />
                     </h1>
-
+                    <!-- ここのimgは飾りだからpではなくdivにするのが理想 -->
                     <p class="dog_illust">
                         <img src="images/dog_illust_ps.gif" alt="犬のロゴ">
                     </p>
@@ -75,12 +75,15 @@
 
                 <!-- ヘッダー -->
                 <header id="header" class="header">
+                    <div class=header_logo>
+                        <h2><img src="images/mae.png"></h2>
+                    </div>
                     <nav class="header_nav">
 
                         <ul>
-                            <div class=header_logo>
+                            <!-- <div class=header_logo>
                                 <h2><img src="images/mae.png"></h2>
-                            </div>
+                            </div> -->
                             <li><a href="#firstpage">top</a></li>
                             <li><a href="portfolio.html">portfolio</a></li>
                             <li><a href="works.html">works</a></li>

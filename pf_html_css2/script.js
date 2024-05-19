@@ -10,34 +10,61 @@
 
 
 // ヘッダー
-const header_disappear = document.querySelector('#header');
-window.addEventListener('scroll', () => {
+var page_name = $("body").attr("class");
+
+
+let window_width = window.innerWidth;
+if(window_width>767 && page_name == "index"){
+    const header_disappear = document.querySelector('#header');
+    window.addEventListener('scroll', () => {
     let scroll_X = window.scrollX;
-    console.log(scroll_X);
-    let window_width = window.innerWidth;
     if(scroll_X > window_width){
-        console.log('でる');
         $('#header').addClass('active');
     }
     else{
         $('#header').removeClass('active');
     }
-});
-
-// ヘッダー縦ページ
+ });
+}else{
+   // ヘッダー縦ページ
 const header_disappears = document.querySelector('#header');
 window.addEventListener('scroll', () => {
     let scroll_Y = window.scrollY;
-    console.log(scroll_Y);
-    let window_width = window.innerWidth;
+    // let window_width = window.innerWidth;
     if(scroll_Y > window_width){
-        console.log('でる');
         $('#header').addClass('active');
     }
     else{
         $('#header').removeClass('active');
     }
-});
+}); 
+}
+// const header_disappear = document.querySelector('#header');
+// window.addEventListener('scroll', () => {
+//     let scroll_X = window.scrollX;
+//     if(scroll_X > window_width){
+//         $('#header').addClass('active');
+//     }
+//     else{
+//         $('#header').removeClass('active');
+//     }
+// });
+
+// ヘッダー縦ページ
+// const header_disappears = document.querySelector('#header');
+// window.addEventListener('scroll', () => {
+//     let scroll_Y = window.scrollY;
+//     // let window_width = window.innerWidth;
+//     if(scroll_Y > window_width){
+//         $('#header').addClass('active');
+//     }
+//     else{
+//         $('#header').removeClass('active');
+//     }
+// });
+
+
+
 
 
 // モーダル

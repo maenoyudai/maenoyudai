@@ -175,6 +175,7 @@ h1 img{
     display: flex;
     width: auto;
     object-fit: cover;
+    width: 100%;
 }
 
 .firstpage_img{
@@ -512,6 +513,7 @@ h2 img{
     font-size: 1.39vw;
     /* width: 49.31vw; */
     position: absolute;
+    margin-left: 10vw;
 }
 
 .header_nav ul li{
@@ -1521,7 +1523,7 @@ input[type="submit" i] {
     }
 
     .c_maeno_yudai{
-        margin-top: 15vh;
+        margin-top: 13vh;
     }
 
     .company-page p{
@@ -1609,20 +1611,20 @@ input[type="submit" i] {
         height: 75vh;
     }
     .portfolio01 h2 {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .portfolio01 img{
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     .portfolio_2page {
         height: 75vh;
     }
     .portfolio02 h2 {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .portfolio02 img{
-        margin-top: 20%;
+        margin-top: 15%;
     }
     
 
@@ -1630,14 +1632,48 @@ input[type="submit" i] {
         height: 75vh;
     }
     .portfolio03 h2 {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .portfolio03 img{
-        margin-top: 20%;
+        margin-top: 15%;
+    }
+
+    .portfolio_4page{
+        height: 75vh;
+    }
+    .portfolio04 h2 {
+        margin-top: 15%;
+    }
+    .portfolio04 img{
+        margin-top: 15%;
+    }
+
+    .portfolio_5page{
+        height: 75vh;
+    }
+    .portfolio05 h2 {
+        margin-top: 15%;
+    }
+    .portfolio05 img{
+        margin-top: 15%;
+    }
+
+    .portfolio_6page{
+        height: 75vh;
+    }
+    .portfolio06 h2 {
+        margin-top: 15%;
+    }
+    .portfolio06 img{
+        margin-top: 15%;
     }
 
     .explanation {
         margin-top: 5vh;
+    }
+
+    .click-btn {
+        margin-top: -7vh;
     }
 
     /* .portfolio_page {
@@ -1727,7 +1763,7 @@ input[type="submit" i] {
     }
 
     .company-page img {
-        margin-top: 5vh;
+        margin-top: 3.5vh;
         width: 35vw;
         margin-left: 30%;
     }
@@ -1859,6 +1895,16 @@ input[type="submit" i] {
         margin-left: 15vw;
     } */
 
+    .header_nav ul li {
+        font-size: 16px;
+    }
+    .header_nav ul {
+        margin-left: 6.5vw;
+    }
+    .header_nav ul li {
+        margin: 15.5vh 6vw 0vh;
+    }
+
 
 }
 
@@ -1869,9 +1915,11 @@ input[type="submit" i] {
 
     .header_nav ul {
         font-size: 2vw;
+        margin-left: 16vw;
     }
     .header_nav ul li {
         margin: 15.5vh 4.2vw 0vh;
+        font-size: 15px;
     }
     .header_logo{
         margin-right: 25vw;
@@ -1944,13 +1992,28 @@ input[type="submit" i] {
         font-size: 3vw;
     }
 
+    .click-btn{
+        height: 13vh;
+    }
+
 
     .plofile-img img{
         margin-left: 60%;
     }
     .company-page img {
         width: 45vw;
-        margin-top: 5vh;
+        margin-top: 3.5vh;
+    }
+    .company-page_jump1 img{
+        margin-left: 5%;
+    }
+    .utility-partners_jump p{
+        margin-left: 4%;
+    }
+
+    button{
+        height: 13vh;
+        font-size: 1.8vw;
     }
     .name{
         margin-left: 1px;
@@ -1960,19 +2023,215 @@ input[type="submit" i] {
         font-size: 2.5vw;
     }
     .my_explanation {
-        font-size: 12px;
-        width: 45vw;
-        margin-left: 30%;
+        font-size: 15px;
+        width: 90vw;
+        margin-left: 10%;
     }
     .my_explanation br{
-        display: none;
+        display: flex;
     }
     a.btn--circle2 {
         margin-left: 68vw;
     }
+    .btn, a.btn, button.btn {
+        font-size: 1.8vw;
+    }
     .kobushi img{
-        margin-top: 3vh;
+        margin-top: 4vh;
         margin-left: -5%;
+        width: 35vw;
     }
 
     }
+
+@media screen and (max-width: 375px){
+    .whole {
+        height: 585vh;
+    }
+
+    .loader h2 {
+        font-size: 5vw;
+    }
+    .loader span img {
+        width: 40vw;
+    }
+    
+    .dog_illust img {
+        width: 24vw;
+        margin-top: -12vh;
+    }
+    .ball_illust img {
+        width: 7vw;
+        margin-top: 94vh;
+    }
+    .all_izz_well_top_left {
+        width: 30vw;
+    }
+    .all_izz_well_top_right {
+        width: 30vw;
+    }
+    .all_izz_well_bottom_left {
+        width: 30vw;
+    }
+    .all_izz_well_bottom_right {
+        width: 30vw;
+    }
+
+     .header_nav ul li {
+            margin: 15.5vh 2.7vw 0vh;
+            font-size: 14px;
+    }
+    h2 img {
+        top: 12vh;
+        margin-top: 2vh;
+    }
+
+    .secondpage p {
+        font-size: 16px;
+        line-height: 8.5vw;
+    }
+    .mae {
+        font-size: 20px;
+    }
+
+    .border-radius_top {
+        margin-top: 7vh;
+    }
+    .border-radius_center {
+        margin-top: 30vh;
+    }
+    .border-radius_under {
+        margin-top: 50vh;
+    }
+    .portfolio_1page {
+        height: 50vh;
+    }
+    .portfolio_2page {
+        height: 50vh;
+    }
+    .portfolio_3page {
+        height: 75vh;
+    }
+    .portfolio_1page span::before, .portfolio_1page span::after {
+        height: 2vh;
+    }
+    .portfolio_2page span::before, .portfolio_2page span::after {
+        height: 2vh;
+    }
+    .portfolio_3page span::before, .portfolio_3page span::after {
+        height: 2vh;
+    }
+    .explanation {
+        font-size: 16px;
+    }
+
+    .company-page img{
+        width: 60vw;
+        margin-left: 25%;
+        margin-top: 5vh;
+    }
+    .company-page p {
+        font-size: 16px;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+    a.company_btn {
+        margin-top: -16vh;
+    }
+    .btn, a.btn, button.btn {
+        font-size: 10px;
+    }
+
+    .plofile-img img {
+        max-width: 180%;
+        margin-left: 20%;
+    }
+    .instagram_logo img {
+        width: 5vw;
+        margin-top: 0.8vh;
+    }
+    .name {
+        margin-left: -20px;
+    }
+    .maeno_yudai {
+        font-size: 13px;
+    }
+    .my_explanation {
+        font-size: 16px;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .my_explanation br{
+        display: none;
+    }
+    .kobushi img {
+        margin-top: 0.5vh;
+        margin-left: -15%;
+        width: 40vw;
+    }
+    .contact_btn {
+        font-size: 10px;
+    }
+    
+    /* ポートフォリオジャンプページ */
+    .portfolio_3page_jump{
+        height: 50vh;
+    }
+    .portfolio_4page_jump{
+        height: 50vh;
+    }
+    .portfolio_5page_jump{
+        height: 50vh;
+    }
+    .portfolio_6page_jump{
+        height: 50vh;
+    }
+    
+    .portfolio_4page span::before, .portfolio_4page span::after {
+        height: 2vh;
+    }
+    .portfolio_5page span::before, .portfolio_5page span::after {
+        height: 2vh;
+    }
+    .portfolio_6page span::before, .portfolio_6page span::after {
+        height: 2vh;
+    }
+    .click-btn {
+        height: 8vh;
+    }
+    .click-btn {
+        font-size: 8px;
+    }
+
+    /* 会社ジャンプページ */
+    .company-page_flex {
+        display: block;
+    }
+    .company-page_jump1{
+        height: 65vh;
+    }
+    .company-page_jump2{
+        height: 50vh;
+    }
+    .company-page_jump3{
+        height: 65vh;
+    }
+    .company-page_jump4{
+        height: 65vh;
+    }
+    button {
+        height: 10vh;
+        font-size: 10px;
+        margin-left: 75vw;
+    }
+    
+    /* 問い合わせジャンプページ */
+    .contact__list_flex p {
+        font-size: 16px;
+        margin-left: 5vw;
+    }
+    input[type="submit" i] {
+        width: 60vw;
+    }
+        
+}
